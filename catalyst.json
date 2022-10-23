@@ -1,0 +1,14 @@
+{
+  "functions": {
+    "targets": [
+      "Router",
+      "image"
+    ],
+    "ignore": [],
+    "source": "functions"
+  },
+  "client": {
+    "source": "bug-tracker-app",
+    "plugin": "zcatalyst-cli-plugin-react"
+  }
+}

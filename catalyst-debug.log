@@ -1,0 +1,593 @@
+[debug] [2022-10-14T12:28:27.037Z] : 
+[debug] [2022-10-14T12:28:27.038Z] : ----------------------------------------------------------------------
+[debug] [2022-10-14T12:28:27.038Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst deploy --only client
+[debug] [2022-10-14T12:28:27.038Z] : CLI Version:  1.13.3
+[debug] [2022-10-14T12:28:27.039Z] : Platform:     darwin
+[debug] [2022-10-14T12:28:27.039Z] : Node Version: v16.17.0
+[debug] [2022-10-14T12:28:27.040Z] : Time:         Fri Oct 14 2022 17:58:27 GMT+0530 (India Standard Time)
+[debug] [2022-10-14T12:28:27.040Z] : ----------------------------------------------------------------------
+[debug] [2022-10-14T12:28:27.040Z] : 
+[debug] [2022-10-14T12:28:27.514Z] : > authorizing via signed-in user option
+[debug] [2022-10-14T12:28:27.514Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-10-14T12:28:27.523Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10689000000034791 
+
+[debug] [2022-10-14T12:28:28.614Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 14 Oct 2022 12:28:28 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=d1e433cb-8680-4b0c-9038-01e938551f36;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=d1e433cb-8680-4b0c-9038-01e938551f36;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-10-14T12:28:28.618Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10689000000034791/environment 
+
+[debug] [2022-10-14T12:28:29.741Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 14 Oct 2022 12:28:29 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=63dd9cf89a6678b816d9580ec827ee61; Path=/","ZD_CSRF_TOKEN=457b030c-dca3-4a1a-ac80-6dd24be72f96;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=457b030c-dca3-4a1a-ac80-6dd24be72f96;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2022-10-14T12:28:29.826Z] : ℹ Plugin : "zcatalyst-cli-plugin-react" is used for client deploy
+[info] [2022-10-14T12:28:29.826Z] : ℹ Building Application...
+[info] [2022-10-14T12:28:31.198Z] : [react-plugin]: Creating an optimized production build...
+[info] [2022-10-14T12:28:36.035Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2022-10-14T12:28:36.035Z] : [react-plugin]: [eslint] 
+src/Component/PostBug.js
+  Line 26:10:   'assign_to' is assigned a value but never used                                                              no-unused-vars
+  Line 99:6:    React Hook useEffect has a missing dependency: 'options'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  Line 125:13:  Expected '===' and instead saw '=='                                                                         eqeqeq
+  Line 125:44:  Expected '===' and instead saw '=='                                                                         eqeqeq
+
+src/context/ReponseProvider.js
+  Line 1:17:  'createContext' is defined but never used  no-unused-vars
+[info] [2022-10-14T12:28:36.035Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2022-10-14T12:28:36.035Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2022-10-14T12:28:36.035Z] : [react-plugin]: File sizes after gzip:
+
+[info] [2022-10-14T12:28:36.047Z] : [react-plugin]:   57.6 kB (+3 B)  build/static/js/main.d9c41b91.js
+[info] [2022-10-14T12:28:36.047Z] : [react-plugin]:   1.07 kB         build/static/css/main.daeacedd.css
+[info] [2022-10-14T12:28:36.047Z] : [react-plugin]:  
+[debug] [2022-10-14T12:28:36.331Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/project/10689000000034791/webapp 
+
+[debug] [2022-10-14T12:28:41.456Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 14 Oct 2022 12:28:41 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=b7604e70-fbb2-4ac2-a630-889363b218d0;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b7604e70-fbb2-4ac2-a630-889363b218d0;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2022-10-14T12:28:41.458Z] : 
+[info] [2022-10-14T12:28:41.458Z] : ✔ client: deploy successful
+[info] [2022-10-14T12:28:41.459Z] : ℹ client: URL => https://bug-tracker-788922055.development.catalystserverless.com/app/index.html
+[info] [2022-10-14T12:28:41.459Z] : 
+[info] [2022-10-14T12:28:41.459Z] : ✔ Catalyst deploy complete!
+[debug] [2022-10-14T12:28:41.459Z] : NO ERRORS REGISTERED
+[debug] [2022-10-14T12:28:41.460Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2022-10-14T12:28:41.460Z] : TOTAL DURATION OF COMMAND EXEC : 13953
+[debug] [2022-10-14T12:28:41.465Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2022-10-14T12:28:42.828Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 14 Oct 2022 12:28:42 GMT","content-length":"0","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=dfa7c7cd-465c-4018-93c5-c549fa7a1ba1;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=dfa7c7cd-465c-4018-93c5-c549fa7a1ba1;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-10-14T12:29:24.767Z] : 
+[debug] [2022-10-14T12:29:24.768Z] : ----------------------------------------------------------------------
+[debug] [2022-10-14T12:29:24.768Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst deploy --only client
+[debug] [2022-10-14T12:29:24.768Z] : CLI Version:  1.13.3
+[debug] [2022-10-14T12:29:24.769Z] : Platform:     darwin
+[debug] [2022-10-14T12:29:24.769Z] : Node Version: v16.17.0
+[debug] [2022-10-14T12:29:24.770Z] : Time:         Fri Oct 14 2022 17:59:24 GMT+0530 (India Standard Time)
+[debug] [2022-10-14T12:29:24.770Z] : ----------------------------------------------------------------------
+[debug] [2022-10-14T12:29:24.770Z] : 
+[debug] [2022-10-14T12:29:25.249Z] : > authorizing via signed-in user option
+[debug] [2022-10-14T12:29:25.249Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-10-14T12:29:25.259Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10689000000034791 
+
+[debug] [2022-10-14T12:29:26.368Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 14 Oct 2022 12:29:26 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=f0e68994-b716-4818-81e9-be52116dd8cc;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=f0e68994-b716-4818-81e9-be52116dd8cc;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-10-14T12:29:26.372Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10689000000034791/environment 
+
+[debug] [2022-10-14T12:29:27.492Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 14 Oct 2022 12:29:27 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=da74c97b-b3c3-42aa-8948-f287a93f4a79;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=da74c97b-b3c3-42aa-8948-f287a93f4a79;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2022-10-14T12:29:27.567Z] : ℹ Plugin : "zcatalyst-cli-plugin-react" is used for client deploy
+[info] [2022-10-14T12:29:27.568Z] : ℹ Building Application...
+[info] [2022-10-14T12:29:28.887Z] : [react-plugin]: Creating an optimized production build...
+[info] [2022-10-14T12:29:33.796Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2022-10-14T12:29:33.797Z] : [react-plugin]: [eslint] 
+src/Component/PostBug.js
+  Line 26:10:   'assign_to' is assigned a value but never used  no-unused-vars
+  Line 125:13:  Expected '===' and instead saw '=='             eqeqeq
+  Line 125:44:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2022-10-14T12:29:33.797Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2022-10-14T12:29:33.797Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2022-10-14T12:29:33.797Z] : [react-plugin]: File sizes after gzip:
+
+[info] [2022-10-14T12:29:33.808Z] : [react-plugin]:   57.6 kB (-4 B)  build/static/js/main.cf73ef53.js
+[info] [2022-10-14T12:29:33.809Z] : [react-plugin]:   1.07 kB         build/static/css/main.daeacedd.css
+[info] [2022-10-14T12:29:33.809Z] : [react-plugin]:  
+[debug] [2022-10-14T12:29:34.090Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/project/10689000000034791/webapp 
+
+[debug] [2022-10-14T12:29:36.755Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 14 Oct 2022 12:29:36 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=c4c4fb4c-59b7-4cb0-83b5-dc23df08447e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c4c4fb4c-59b7-4cb0-83b5-dc23df08447e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2022-10-14T12:29:36.756Z] : 
+[info] [2022-10-14T12:29:36.757Z] : ✔ client: deploy successful
+[info] [2022-10-14T12:29:36.757Z] : ℹ client: URL => https://bug-tracker-788922055.development.catalystserverless.com/app/index.html
+[info] [2022-10-14T12:29:36.757Z] : 
+[info] [2022-10-14T12:29:36.757Z] : ✔ Catalyst deploy complete!
+[debug] [2022-10-14T12:29:36.757Z] : NO ERRORS REGISTERED
+[debug] [2022-10-14T12:29:36.758Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2022-10-14T12:29:36.758Z] : TOTAL DURATION OF COMMAND EXEC : 11517
+[debug] [2022-10-14T12:29:36.764Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2022-10-14T12:29:37.745Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 14 Oct 2022 12:29:37 GMT","content-length":"0","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=5440123c-1405-456a-b7cf-a208dd1e5c6e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5440123c-1405-456a-b7cf-a208dd1e5c6e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-10-14T12:36:55.599Z] : 
+[debug] [2022-10-14T12:36:55.600Z] : ----------------------------------------------------------------------
+[debug] [2022-10-14T12:36:55.600Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
+[debug] [2022-10-14T12:36:55.600Z] : CLI Version:  1.13.3
+[debug] [2022-10-14T12:36:55.601Z] : Platform:     darwin
+[debug] [2022-10-14T12:36:55.601Z] : Node Version: v16.17.0
+[debug] [2022-10-14T12:36:55.602Z] : Time:         Fri Oct 14 2022 18:06:55 GMT+0530 (India Standard Time)
+[debug] [2022-10-14T12:36:55.602Z] : ----------------------------------------------------------------------
+[debug] [2022-10-14T12:36:55.602Z] : 
+[debug] [2022-10-14T12:36:56.101Z] : > authorizing via signed-in user option
+[debug] [2022-10-14T12:36:56.101Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-10-14T12:36:56.111Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10689000000034791 
+
+[debug] [2022-10-14T12:36:57.400Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 14 Oct 2022 12:36:57 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=df45868f-bfc6-4860-b79a-3ef9cf5122a3;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=df45868f-bfc6-4860-b79a-3ef9cf5122a3;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-10-14T12:36:57.404Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10689000000034791/environment 
+
+[debug] [2022-10-14T12:36:58.576Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 14 Oct 2022 12:36:58 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=4ca95707-8ebe-4729-bd54-643edc7e45bc;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4ca95707-8ebe-4729-bd54-643edc7e45bc;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-10-14T12:36:58.748Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10689000000034791/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-10-14T12:36:59.841Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 14 Oct 2022 12:36:59 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=c8660b70-8822-43f6-82a9-80b513c4ce1d;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c8660b70-8822-43f6-82a9-80b513c4ce1d;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-10-14T12:36:59.850Z] : unknown eol undefined hence skipping check
+[debug] [2022-10-14T12:36:59.850Z] : unknown eol undefined hence skipping check
+[debug] [2022-10-14T12:36:59.861Z] : http port : '3010' is not available. Hence port '3011' will be used instead.
+[info] [2022-10-14T12:36:59.891Z] : ℹ server[router]: URL : http://localhost:3000/server/router/
+[info] [2022-10-14T12:36:59.892Z] : 
+[info] [2022-10-14T12:36:59.896Z] : ℹ server[image]: URL : http://localhost:3000/server/image/
+[info] [2022-10-14T12:36:59.897Z] : 
+[info] [2022-10-14T12:37:01.889Z] : [react-plugin]: Starting the development server...
+
+[info] [2022-10-14T12:37:01.890Z] : ℹ client[bug-tracker-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2022-10-14T12:37:06.275Z] : [react-plugin]: Failed to compile.
+
+[info] [2022-10-14T12:37:06.275Z] : [react-plugin]: [eslint] 
+src/Component/PostBug.js
+  Line 12:19:   'moment' is not defined      no-undef
+  Line 139:16:  'DatePicker' is not defined  react/jsx-no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2022-10-14T12:38:34.254Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:38:34.887Z] : [react-plugin]: Failed to compile.
+
+[info] [2022-10-14T12:38:34.888Z] : [react-plugin]: [eslint] 
+src/Component/PostBug.js
+  Line 12:19:  'moment' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2022-10-14T12:38:45.098Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:38:45.300Z] : [react-plugin]: Failed to compile.
+
+[info] [2022-10-14T12:38:45.300Z] : [react-plugin]: SyntaxError: /Users/srini-pt6128/Documents/srini/BugTracker/bug-tracker-app/src/Component/PostBug.js: Unexpected token (13:0)
+  11 |
+  12 |
+> 13 | };
+     | ^
+  14 |
+  15 | const PostBug = (props) => {
+  16 |   const { Current_user } = useContext(ResponseContext);
+    at parser.next (<anonymous>)
+    at normalizeFile.next (<anonymous>)
+    at run.next (<anonymous>)
+    at transform.next (<anonymous>)
+[info] [2022-10-14T12:38:47.044Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:38:47.352Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2022-10-14T12:38:47.352Z] : [react-plugin]: [eslint] 
+src/Component/PostBug.js
+  Line 23:20:   'setdeadline' is assigned a value but never used  no-unused-vars
+  Line 25:10:   'assign_to' is assigned a value but never used    no-unused-vars
+  Line 121:13:  Expected '===' and instead saw '=='               eqeqeq
+  Line 121:44:  Expected '===' and instead saw '=='               eqeqeq
+[info] [2022-10-14T12:38:47.352Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2022-10-14T12:38:47.352Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2022-10-14T12:38:52.486Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:38:52.736Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2022-10-14T12:38:52.736Z] : [react-plugin]: [eslint] 
+src/Component/PostBug.js
+  Line 25:10:   'assign_to' is assigned a value but never used  no-unused-vars
+  Line 121:13:  Expected '===' and instead saw '=='             eqeqeq
+  Line 121:44:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2022-10-14T12:38:52.737Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2022-10-14T12:38:52.737Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2022-10-14T12:39:37.492Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:39:37.652Z] : [react-plugin]: Failed to compile.
+
+[info] [2022-10-14T12:39:37.652Z] : [react-plugin]: SyntaxError: /Users/srini-pt6128/Documents/srini/BugTracker/bug-tracker-app/src/Component/PostBug.js: Unexpected token (62:7)
+  60 |       alert("select a project");
+  61 |     }
+> 62 |     if()
+     |        ^
+  63 |     if (name !== "" && description !== "" && file !== null) {
+  64 |       var filestore = window.catalyst.file;
+  65 |       var folder = filestore.folderId(FOLDERID);
+[info] [2022-10-14T12:39:46.660Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:39:46.972Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2022-10-14T12:39:46.972Z] : [react-plugin]: [eslint] 
+src/Component/PostBug.js
+  Line 25:10:   'assign_to' is assigned a value but never used  no-unused-vars
+  Line 122:13:  Expected '===' and instead saw '=='             eqeqeq
+  Line 122:44:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2022-10-14T12:39:46.972Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2022-10-14T12:39:46.972Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2022-10-14T12:39:50.307Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:39:50.554Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2022-10-14T12:39:50.555Z] : [react-plugin]: [eslint] 
+src/Component/PostBug.js
+  Line 25:10:   'assign_to' is assigned a value but never used  no-unused-vars
+  Line 122:13:  Expected '===' and instead saw '=='             eqeqeq
+  Line 122:44:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2022-10-14T12:39:50.555Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2022-10-14T12:39:50.555Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2022-10-14T12:39:59.078Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:39:59.345Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2022-10-14T12:39:59.345Z] : [react-plugin]: [eslint] 
+src/Component/PostBug.js
+  Line 25:10:   'assign_to' is assigned a value but never used  no-unused-vars
+  Line 122:13:  Expected '===' and instead saw '=='             eqeqeq
+  Line 122:44:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2022-10-14T12:39:59.345Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2022-10-14T12:39:59.345Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2022-10-14T12:40:12.074Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:40:12.358Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2022-10-14T12:40:12.359Z] : [react-plugin]: [eslint] 
+src/Component/PostBug.js
+  Line 25:10:   'assign_to' is assigned a value but never used  no-unused-vars
+  Line 124:13:  Expected '===' and instead saw '=='             eqeqeq
+  Line 124:44:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2022-10-14T12:40:12.359Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2022-10-14T12:40:12.359Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2022-10-14T12:40:13.903Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:40:14.124Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2022-10-14T12:40:14.124Z] : [react-plugin]: [eslint] 
+src/Component/PostBug.js
+  Line 25:10:   'assign_to' is assigned a value but never used  no-unused-vars
+  Line 124:13:  Expected '===' and instead saw '=='             eqeqeq
+  Line 124:44:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2022-10-14T12:40:14.124Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2022-10-14T12:40:14.124Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2022-10-14T12:40:17.368Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:40:17.577Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2022-10-14T12:40:17.577Z] : [react-plugin]: [eslint] 
+src/Component/PostBug.js
+  Line 25:10:   'assign_to' is assigned a value but never used  no-unused-vars
+  Line 124:13:  Expected '===' and instead saw '=='             eqeqeq
+  Line 124:44:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2022-10-14T12:40:17.577Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2022-10-14T12:40:17.577Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2022-10-14T12:40:22.490Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:40:22.695Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2022-10-14T12:40:22.695Z] : [react-plugin]: [eslint] 
+src/Component/PostBug.js
+  Line 25:10:   'assign_to' is assigned a value but never used  no-unused-vars
+  Line 124:13:  Expected '===' and instead saw '=='             eqeqeq
+  Line 124:44:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2022-10-14T12:40:22.695Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2022-10-14T12:40:22.695Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2022-10-14T12:40:23.649Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:40:23.822Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2022-10-14T12:40:23.823Z] : [react-plugin]: [eslint] 
+src/Component/PostBug.js
+  Line 25:10:   'assign_to' is assigned a value but never used  no-unused-vars
+  Line 124:13:  Expected '===' and instead saw '=='             eqeqeq
+  Line 124:44:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2022-10-14T12:40:23.823Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2022-10-14T12:40:23.823Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2022-10-14T12:40:40.213Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:40:40.392Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2022-10-14T12:40:40.393Z] : [react-plugin]: [eslint] 
+src/Component/PostBug.js
+  Line 25:10:   'assign_to' is assigned a value but never used  no-unused-vars
+  Line 124:13:  Expected '===' and instead saw '=='             eqeqeq
+  Line 124:44:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2022-10-14T12:40:40.393Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2022-10-14T12:40:40.393Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2022-10-14T12:40:47.497Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:40:47.705Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2022-10-14T12:40:47.706Z] : [react-plugin]: [eslint] 
+src/Component/PostBug.js
+  Line 25:10:   'assign_to' is assigned a value but never used  no-unused-vars
+  Line 124:13:  Expected '===' and instead saw '=='             eqeqeq
+  Line 124:44:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2022-10-14T12:40:47.706Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2022-10-14T12:40:47.706Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2022-10-14T12:42:02.547Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:42:02.757Z] : [react-plugin]: Failed to compile.
+
+[info] [2022-10-14T12:42:02.758Z] : [react-plugin]: SyntaxError: /Users/srini-pt6128/Documents/srini/BugTracker/bug-tracker-app/src/Component/BugsDetails.js: Unexpected token (108:24)
+  106 |       <div style={{ borderStyle: "dotted" }}>
+  107 |         <h2>description</h2>
+> 108 |         <p>{Description?}</p>
+      |                         ^
+  109 |         <textarea
+  110 |           value={Description}
+  111 |           onChange={(e) => setDescription(e.target.value)}
+[info] [2022-10-14T12:42:08.594Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:42:08.756Z] : [react-plugin]: Failed to compile.
+
+[info] [2022-10-14T12:42:08.769Z] : [react-plugin]: SyntaxError: /Users/srini-pt6128/Documents/srini/BugTracker/bug-tracker-app/src/Component/BugsDetails.js: Unexpected token, expected ":" (108:35)
+  106 |       <div style={{ borderStyle: "dotted" }}>
+  107 |         <h2>description</h2>
+> 108 |         <p>{Description?Description}</p>
+      |                                    ^
+  109 |         <textarea
+  110 |           value={Description}
+  111 |           onChange={(e) => setDescription(e.target.value)}
+[info] [2022-10-14T12:42:09.718Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:42:09.850Z] : [react-plugin]: Failed to compile.
+
+[info] [2022-10-14T12:42:09.850Z] : [react-plugin]: SyntaxError: /Users/srini-pt6128/Documents/srini/BugTracker/bug-tracker-app/src/Component/BugsDetails.js: Unexpected token (108:36)
+  106 |       <div style={{ borderStyle: "dotted" }}>
+  107 |         <h2>description</h2>
+> 108 |         <p>{Description?Description:}</p>
+      |                                     ^
+  109 |         <textarea
+  110 |           value={Description}
+  111 |           onChange={(e) => setDescription(e.target.value)}
+[info] [2022-10-14T12:42:13.563Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:42:13.865Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2022-10-14T12:42:13.866Z] : [react-plugin]: [eslint] 
+src/Component/BugsDetails.js
+  Line 54:28:   Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 59:6:    React Hook useEffect has missing dependencies: 'Current_user' and 'bug.status'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 88:13:   'issued_by_user_id' is assigned a value but never used                                                                              no-unused-vars
+  Line 136:15:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 136:46:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 147:15:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 147:46:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+
+src/Component/PostBug.js
+  Line 25:10:   'assign_to' is assigned a value but never used  no-unused-vars
+  Line 124:13:  Expected '===' and instead saw '=='             eqeqeq
+  Line 124:44:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2022-10-14T12:42:13.866Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2022-10-14T12:42:13.866Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2022-10-14T12:42:18.510Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:42:18.763Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2022-10-14T12:42:18.763Z] : [react-plugin]: [eslint] 
+src/Component/BugsDetails.js
+  Line 54:28:   Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 59:6:    React Hook useEffect has missing dependencies: 'Current_user' and 'bug.status'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 88:13:   'issued_by_user_id' is assigned a value but never used                                                                              no-unused-vars
+  Line 136:15:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 136:46:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 147:15:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 147:46:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+
+src/Component/PostBug.js
+  Line 25:10:   'assign_to' is assigned a value but never used  no-unused-vars
+  Line 124:13:  Expected '===' and instead saw '=='             eqeqeq
+  Line 124:44:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2022-10-14T12:42:18.764Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2022-10-14T12:42:18.764Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2022-10-14T12:42:24.660Z] : [react-plugin]: Compiling...
+[info] [2022-10-14T12:42:24.869Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2022-10-14T12:42:24.870Z] : [react-plugin]: [eslint] 
+src/Component/BugsDetails.js
+  Line 54:28:   Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 59:6:    React Hook useEffect has missing dependencies: 'Current_user' and 'bug.status'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 88:13:   'issued_by_user_id' is assigned a value but never used                                                                              no-unused-vars
+  Line 136:15:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 136:46:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 147:15:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 147:46:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+
+src/Component/PostBug.js
+  Line 25:10:   'assign_to' is assigned a value but never used  no-unused-vars
+  Line 124:13:  Expected '===' and instead saw '=='             eqeqeq
+  Line 124:44:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2022-10-14T12:42:24.870Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2022-10-14T12:42:24.870Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2022-10-14T12:42:39.376Z] : Shutting down server
+[info] [2022-10-14T12:42:39.415Z] : 
+[info] [2022-10-14T12:42:39.415Z] : ✔ Shutdown complete
+[debug] [2022-10-14T12:42:39.415Z] : NO ERRORS REGISTERED
+[debug] [2022-10-14T12:42:39.416Z] : EXEC ENDED with event: serve, message: success
+[debug] [2022-10-14T12:42:39.416Z] : TOTAL DURATION OF COMMAND EXEC : 343324
+[debug] [2022-10-14T12:42:39.427Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2022-10-14T12:42:40.856Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 14 Oct 2022 12:42:40 GMT","content-length":"0","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=6cdad11d-4b51-48e9-9f2c-e91b7dc5871a;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=6cdad11d-4b51-48e9-9f2c-e91b7dc5871a;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-10-14T12:42:52.694Z] : 
+[debug] [2022-10-14T12:42:52.695Z] : ----------------------------------------------------------------------
+[debug] [2022-10-14T12:42:52.695Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst deploy --only client
+[debug] [2022-10-14T12:42:52.696Z] : CLI Version:  1.13.3
+[debug] [2022-10-14T12:42:52.696Z] : Platform:     darwin
+[debug] [2022-10-14T12:42:52.696Z] : Node Version: v16.17.0
+[debug] [2022-10-14T12:42:52.697Z] : Time:         Fri Oct 14 2022 18:12:52 GMT+0530 (India Standard Time)
+[debug] [2022-10-14T12:42:52.698Z] : ----------------------------------------------------------------------
+[debug] [2022-10-14T12:42:52.698Z] : 
+[debug] [2022-10-14T12:42:53.605Z] : > authorizing via signed-in user option
+[debug] [2022-10-14T12:42:53.606Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-10-14T12:42:53.617Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10689000000034791 
+
+[debug] [2022-10-14T12:42:54.645Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 14 Oct 2022 12:42:54 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=63dd9cf89a6678b816d9580ec827ee61; Path=/","ZD_CSRF_TOKEN=1b2cdd07-650a-4862-a5fc-1b284cdae84d;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=1b2cdd07-650a-4862-a5fc-1b284cdae84d;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-10-14T12:42:54.649Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10689000000034791/environment 
+
+[debug] [2022-10-14T12:42:55.580Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 14 Oct 2022 12:42:55 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=214d7640-079f-4746-94eb-84b9e0f026e3;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=214d7640-079f-4746-94eb-84b9e0f026e3;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2022-10-14T12:42:55.721Z] : ℹ Plugin : "zcatalyst-cli-plugin-react" is used for client deploy
+[info] [2022-10-14T12:42:55.722Z] : ℹ Building Application...
+[info] [2022-10-14T12:42:57.991Z] : [react-plugin]: Creating an optimized production build...
+[info] [2022-10-14T12:43:04.481Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2022-10-14T12:43:04.481Z] : [react-plugin]: [eslint] 
+src/Component/BugsDetails.js
+  Line 54:28:   Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 59:6:    React Hook useEffect has missing dependencies: 'Current_user' and 'bug.status'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 88:13:   'issued_by_user_id' is assigned a value but never used                                                                              no-unused-vars
+  Line 136:15:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 136:46:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 147:15:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 147:46:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+
+src/Component/PostBug.js
+  Line 25:10:   'assign_to' is assigned a value but never used  no-unused-vars
+  Line 124:13:  Expected '===' and instead saw '=='             eqeqeq
+  Line 124:44:  Expected '===' and instead saw '=='             eqeqeq
+[info] [2022-10-14T12:43:04.481Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2022-10-14T12:43:04.482Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2022-10-14T12:43:04.482Z] : [react-plugin]: File sizes after gzip:
+
+[info] [2022-10-14T12:43:04.494Z] : [react-plugin]:   57.62 kB (+19 B)  build/static/js/main.04e5071b.js
+[info] [2022-10-14T12:43:04.494Z] : [react-plugin]:   1.07 kB           build/static/css/main.daeacedd.css
+[info] [2022-10-14T12:43:04.494Z] : [react-plugin]:  
+[debug] [2022-10-14T12:43:04.789Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/project/10689000000034791/webapp 
+
+[debug] [2022-10-14T12:43:07.122Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 14 Oct 2022 12:43:07 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=6a47f264-f05a-4919-b47f-0f6a874bb6dc;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=6a47f264-f05a-4919-b47f-0f6a874bb6dc;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2022-10-14T12:43:07.125Z] : 
+[info] [2022-10-14T12:43:07.126Z] : ✔ client: deploy successful
+[info] [2022-10-14T12:43:07.126Z] : ℹ client: URL => https://bug-tracker-788922055.development.catalystserverless.com/app/index.html
+[info] [2022-10-14T12:43:07.126Z] : 
+[info] [2022-10-14T12:43:07.126Z] : ✔ Catalyst deploy complete!
+[debug] [2022-10-14T12:43:07.126Z] : NO ERRORS REGISTERED
+[debug] [2022-10-14T12:43:07.127Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2022-10-14T12:43:07.127Z] : TOTAL DURATION OF COMMAND EXEC : 13538
+[debug] [2022-10-14T12:43:07.139Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2022-10-14T12:43:08.177Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 14 Oct 2022 12:43:08 GMT","content-length":"0","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=a82dbd01-e1f0-4c6c-88e1-a2bf9fbd5c7f;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a82dbd01-e1f0-4c6c-88e1-a2bf9fbd5c7f;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-10-22T14:29:32.060Z] : 
+[debug] [2022-10-22T14:29:32.061Z] : ----------------------------------------------------------------------
+[debug] [2022-10-22T14:29:32.062Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
+[debug] [2022-10-22T14:29:32.062Z] : CLI Version:  1.13.3
+[debug] [2022-10-22T14:29:32.062Z] : Platform:     darwin
+[debug] [2022-10-22T14:29:32.063Z] : Node Version: v16.17.0
+[debug] [2022-10-22T14:29:32.064Z] : Time:         Sat Oct 22 2022 19:59:32 GMT+0530 (India Standard Time)
+[debug] [2022-10-22T14:29:32.065Z] : ----------------------------------------------------------------------
+[debug] [2022-10-22T14:29:32.065Z] : 
+[debug] [2022-10-22T14:29:32.917Z] : > authorizing via signed-in user option
+[debug] [2022-10-22T14:29:32.917Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-10-22T14:29:32.927Z] : > refreshing access token <
+[debug] [2022-10-22T14:29:32.929Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2022-10-22T14:29:34.074Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 22 Oct 2022 14:29:33 GMT","content-type":"application/json;charset=UTF-8","content-length":"169","connection":"close","set-cookie":["b266a5bf57=57c7a14afabcac9a0b9dfc64b3542b70; Path=/","iamcsr=01c68e6e-12fc-4517-ae87-d7c071a97561;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=01c68e6e-12fc-4517-ae87-d7c071a97561;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-10-22T14:29:34.093Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10689000000034791 
+
+[debug] [2022-10-22T14:29:35.226Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 22 Oct 2022 14:29:35 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=dcfb8dc6-6e6e-451f-94c8-79d531cff02f;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=dcfb8dc6-6e6e-451f-94c8-79d531cff02f;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-10-22T14:29:35.228Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10689000000034791/environment 
+
+[debug] [2022-10-22T14:29:36.455Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 22 Oct 2022 14:29:36 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=42d9ef58-3aad-44ef-bf21-72c4017b46c3;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=42d9ef58-3aad-44ef-bf21-72c4017b46c3;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-10-22T14:29:36.698Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/10689000000034791/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-10-22T14:29:37.889Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 22 Oct 2022 14:29:37 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=d1a4966a-9ba3-420b-a574-dbfb52f6f9c7;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=d1a4966a-9ba3-420b-a574-dbfb52f6f9c7;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-10-22T14:29:37.899Z] : unknown eol undefined hence skipping check
+[debug] [2022-10-22T14:29:37.899Z] : unknown eol undefined hence skipping check
+[debug] [2022-10-22T14:29:37.908Z] : http port : '3010' is not available. Hence port '3011' will be used instead.
+[info] [2022-10-22T14:29:37.938Z] : ℹ server[router]: URL : http://localhost:3000/server/router/
+[info] [2022-10-22T14:29:37.939Z] : 
+[info] [2022-10-22T14:29:37.943Z] : ℹ server[image]: URL : http://localhost:3000/server/image/
+[info] [2022-10-22T14:29:37.944Z] : 
+[info] [2022-10-22T14:29:42.078Z] : [react-plugin]: Starting the development server...
+
+[info] [2022-10-22T14:29:42.081Z] : ℹ client[bug-tracker-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2022-10-22T14:29:50.041Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2022-10-22T14:29:50.041Z] : [react-plugin]: [eslint] 
+src/Component/BugsDetails.js
+  Line 54:28:   Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 59:6:    React Hook useEffect has missing dependencies: 'Current_user' and 'bug.status'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 88:13:   'issued_by_user_id' is assigned a value but never used                                                                              no-unused-vars
+  Line 136:15:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 136:46:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 147:15:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+  Line 147:46:  Expected '===' and instead saw '=='                                                                                                 eqeqeq
+[info] [2022-10-22T14:29:50.042Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2022-10-22T14:29:50.042Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2022-10-22T14:31:00.416Z] : Shutting down server
+[info] [2022-10-22T14:31:00.463Z] : 
+[info] [2022-10-22T14:31:00.463Z] : ✔ Shutdown complete
+[debug] [2022-10-22T14:31:00.464Z] : NO ERRORS REGISTERED
+[debug] [2022-10-22T14:31:00.464Z] : EXEC ENDED with event: serve, message: success
+[debug] [2022-10-22T14:31:00.464Z] : TOTAL DURATION OF COMMAND EXEC : 87561
+[debug] [2022-10-22T14:31:00.474Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2022-10-22T14:31:01.825Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 22 Oct 2022 14:31:01 GMT","content-length":"0","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=a1ddcb79-5c16-495a-b333-726d49aaa4bf;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a1ddcb79-5c16-495a-b333-726d49aaa4bf;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+

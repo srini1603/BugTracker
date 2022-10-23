@@ -1,0 +1,29 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "10689000000034791",
+      "name": "bug-tracker",
+      "domain": {
+        "id": "10048258268",
+        "name": "bug-tracker-788922055.development"
+      },
+      "env": [
+        {
+          "idx": 1,
+          "id": "788922055",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}
